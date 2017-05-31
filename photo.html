@@ -6,90 +6,106 @@
   </head>
 
   <body>
-
     <header class="page-header">
-      <h1 class="page-header__title">Фото и видео Седоны</h1>
       <div class="page-header__logo">
         <img src="#" alt="" width="102" height="83">
       </div>
       <nav class="main-nav  main-nav--open">
-        <span class="main-nav__toggler"></span>
+        <button class="main-nav__toggler" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item">главная</li>
-            <li class="main-nav__item">фото и видео</li>
-            <li class="main-nav__item">форма отзыва</li>
-            <li class="main-nav__item">html academy</li>
+            <li class="main-nav__item"><a href="#">главная</a></li>
+            <li class="main-nav__item"><a href="#">фото и видео</a></li>
+            <li class="main-nav__item"><a href="#">форма отзыва</a></li>
+            <li class="main-nav__item"><a href="#">html academy</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-
     <main>
+      <div class="page-logo"></div>
 
-      <section class="photo-and-video">
-        <h2 class="photo-and-video__title">фото и видео</h2>
-        <p class="photo-and-video__text">
-          не можете решиться на путешествие<br>
-          из-за курса? фотографии помогут<br>
+      <section class="page-heading">
+        <h1 class="page-heading__title">фото и видео</h1>
+        <p class="page-heading__text">
+          не можете решиться на путешествие
+          из-за курса? фотографии помогут
           вам забыть о политике и экономике.
         </p>
       </section>
 
-      <section class="photo-block">
-        <div class="photo-block__wrapp">
-          <img class="photo-block__img" src="#" alt="" width="280" height="280">
-          <h3 class="photo-block__title">неродные просторы</h3>
-          <p class="photo-block__author">Автор фото: Борис</p>
-          <div class="photo-block__like">1350</div>
-        </div>
-      </section>
+      <div class="catalog">
+        <article class="photo">
+          <img class="photo__image" src="#" alt="" width="280" height="280">
+          <blockquote class="photo__information">
+            <span class="photo__heading">неродные просторы</span>
+            <cite class="photo__text">автор фото: Борис</cite>
+          </blockquote>
+          <div class="photo__like">
+            <a class="photo__like-image" href="#"><img src="#" alt="" width="23" height="21"></a>
+            <span class="photo__like-text">1350</span>
+          </div>
+        </article>
 
-      <section class="photo-block">
-        <div class="photo-block__wrapp">
-          <img class="photo-block__img" src="#" alt="" width="280" height="280">
-          <h3 class="photo-block__title">местная растительность</h3>
-          <p class="photo-block__author">Автор фото: Сергей</p>
-          <div class="photo-block__like">143</div>
-        </div>
-      </section>
+        <article class="photo">
+          <img class="photo__image" src="#" alt="" width="280" height="280">
+          <blockquote class="photo__information">
+            <span class="photo__heading">местная растительность</span>
+            <cite class="photo__text">Автор фото: Сергей</cite>
+          </blockquote>
+          <div class="photo__like">
+            <a class="photo__like-image" href="#"><img src="#" alt="" width="23" height="21"></a>
+            <span class="photo__like-text">143</span>
+          </div>
+        </article>
 
-      <section class="photo-block">
-        <div class="photo-block__wrapp">
-          <img class="photo-block__img" src="#" alt="" width="280" height="280">
-          <h3 class="photo-block__title">дорога на север</h3>
-          <p class="photo-block__author">Автор фото: Пётр</p>
-          <div class="photo-block__like">96</div>
-        </div>
-      </section>
+        <article class="photo">
+          <img class="photo__image" src="#" alt="" width="280" height="280">
+          <blockquote class="photo__information">
+            <span class="photo__heading">дорога на север</span>
+            <cite class="photo__text">Автор фото: Пётр</cite>
+          </blockquote>
+          <div class="photo__like">
+            <a class="photo__like-image" href="#"><img src="#" alt="" width="23" height="21"></a>
+            <span class="photo__like-text">96</span>
+          </div>
+        </article>
 
-      <section class="photo-block">
-        <div class="photo-block__wrapp">
-          <img class="photo-block__img" src="#" alt="" width="280" height="280">
-          <h3 class="photo-block__title">мост дьявола</h3>
-          <p class="photo-block__author">Автор фото: Антон</p>
-          <div class="photo-block__like">254</div>
-        </div>
-      </section>
+        <article class="photo">
+          <img class="photo__image" src="#" alt="" width="280" height="280">
+          <blockquote class="photo__information">
+            <span class="photo__heading">мост дьявола</span>
+            <cite class="photo__text">Автор фото: Антон</cite>
+          </blockquote>
+          <div class="photo__like">
+            <a class="photo__like-image" href="#"><img src="#" alt="" width="23" height="21"></a>
+            <span class="photo__like-text">254</span>
+          </div>
+        </article>
+      </div>
 
-
-      <section class="hesitating">
-        <h2 class="hesitating__title">всё еще сомневаетесь?</h2>
-        <p class="hesitating__text">
-          смотрите видеопрезентацию и<br>
-          скорее за билетами, пока оин не<br>
+      <section class="page-heading">
+        <h1 class="page-heading__title">всё еще сомневаетесь?</h1>
+        <p class="page-heading__text">
+          смотрите видеопрезентацию и
+          скорее за билетами, пока они не
           подорожали в очередной раз!
         </p>
       </section>
 
-      <section class="video-presentation">
-        <video src="#" controls preload="metadata" poster="#" width="320" height="201"></video>
-      </section>
-
-
+      <div class="video">
+        <img class="video__image" src="#" alt="" width="320" height="201">
+        <div class="video__controls">
+          <div class="video__timeline"></div>
+          <div class="video__buttons">
+            <button class="video-button video-button--repeat  btn" type="button"></button>
+            <button class="video-button video-button--cc  btn" type="button"></button>
+            <button class="video-button video-button--full-screen  btn" type="button"></button>
+          </div>
+        </div>
+      </div>
     </main>
-
 
     <footer class="page-footer">
       <div class="page-footer__wrapp">
@@ -104,8 +120,6 @@
         </div>
       </div>
     </footer>
-
-
 
   </body>
 </html>
