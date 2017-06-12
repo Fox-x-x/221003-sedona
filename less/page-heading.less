@@ -1,6 +1,11 @@
 .page-heading {
   background-color: @color-thirdy;
   border: 1px solid black;
+  width: 280px;
+  min-height: 239px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .page-heading__title {
@@ -14,4 +19,20 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+}
+
+@media @tablet-widths {
+  .page-heading {
+    width: 728px;
+    min-height: 207px;
+    margin: 0 auto;
+  }
+}
+
+@media @desktop-widths {
+  .page-heading {
+    width: 1160px;
+    min-height: 310px;
+    margin: 0 auto;
+  }
 }

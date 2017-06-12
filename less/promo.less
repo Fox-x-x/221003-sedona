@@ -1,7 +1,30 @@
 .promo {
-  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background: url("/img/bg-back-mobile@1x.jpg") center no-repeat;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 389px;
+  margin-top: -35px;
+  border: 1px solid black;
 }
 
 .promo__text {
-  background-image: url("/img/text-sedona-index.svg");
+
+  background-position: center;
+}
+
+@media @tablet-widths {
+  .promo {
+    background: url("/img/back-tablet.jpg") center no-repeat;
+    width: 768px;
+    min-height: 518px;
+  }
+}
+
+@media @desktop-widths {
+  .promo {
+    border: 1px solid black;
+    background: url("/img/back-desktop.jpg") center no-repeat;
+    width: 1200px;
+    min-height: 518px;
+  }
 }

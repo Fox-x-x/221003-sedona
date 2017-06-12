@@ -1,6 +1,8 @@
 .booking {
   background-color: @color-thirdy;
   border: 1px solid black;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .booking__title {
@@ -12,4 +14,16 @@
 
 .booking__text{
   line-height: 24px;
+}
+
+@media @tablet-widths {
+  .booking {
+    width: 768px;
+  }
+}
+
+@media @desktop-widths {
+  .booking {
+    width: 1200px;
+  }
 }

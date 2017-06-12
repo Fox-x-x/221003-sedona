@@ -1,6 +1,17 @@
 .page-footer {
   background-color: @color-fifth;
   border: 1px solid black;
+  width: 320px;
+  min-height: 243px;
+  margin: 0 auto;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 243px;
 }
 
 .page-footer__hashtag {
@@ -22,4 +33,31 @@
 .page-footer__copyright-link {
   color: @color-secondary;
   line-height: 26px;
+}
+
+
+@media @tablet-widths {
+  .page-footer {
+    width: 648px;
+    min-height: 90px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer {
+    width: 960px;
+    min-height: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }

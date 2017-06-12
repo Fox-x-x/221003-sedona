@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>Оставьте отзыв</title>
   </head>
@@ -25,8 +26,8 @@
     </header>
 
     <main>
-      <div class="page-logo">
-        <div class="page-logo__text"></div>
+      <div class="promo">
+        <div class="promo__text"></div>
       </div>
 
       <section class="page-heading">
@@ -42,33 +43,33 @@
       <div class="forms">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-text">
-            <div class="field-text__title">представьтесь:</div>
+            <div class="field-text__title">представьтесь: </div>
             <div class="field-text__items">
               <label class="field-text__item">
+                <span class="field-text__text">имя <sup>*</sup></span>
                 <input class="field-text__input" type="text" name="name" placeholder="Пётр">
-                <span class="field-text__text"> имя<sup>*</sup></span>
               </label>
               <label class="field-text__item">
+                <span class="field-text__text">фамилия <sup>*</sup></span>
                 <input class="field-text__input" type="text" name="last-name" placeholder="Иванов">
-                <span class="field-text__text"> фамилия<sup>*</sup></span>
               </label>
               <label class="field-text__item">
+                <span class="field-text__text">отчество </span>
                 <input class="field-text__input" type="text" name="patronymic" placeholder="Александрович">
-                <span class="field-text__text"> отчество</span>
               </label>
             </div>
           </div>
 
-          <div class="field-text">
+          <div class="field-text  field-text--secondary">
             <div class="field-text__title">контактная информация:</div>
-            <div class="field-text__items">
+            <div class="field-text__items--secondary">
               <label class="field-text__item  field-text__item--secondary">
-                <span class="field-text__text">контактынй телефон<sup>*</sup></span>
-                <input class="field-text__input" type="text" name="phone" placeholder="Введите телефон">
+                <span class="field-text__text  field-text__text--secondary">контактынй телефон<sup>*</sup></span>
+                <input class="field-text__input  field-text__input--secondary" type="text" name="phone" placeholder="Введите телефон">
               </label>
               <label class="field-text__item  field-text__item--secondary">
-                <span class="field-text__text">электронная почта<sup>*</sup></span>
-                <input class="field-text__input" type="text" name="email" placeholder="Введите e-mail">
+                <span class="field-text__text  field-text__text--secondary">электронная почта<sup>*</sup></span>
+                <input class="field-text__input  field-text__input--secondary" type="text" name="email" placeholder="Введите e-mail">
               </label>
             </div>
           </div>
@@ -117,7 +118,7 @@
             <div class="field-textarea__title">опишите свои эмоции:</div>
             <div class="field-textarea__items">
               <label class="field-textarea__item">
-                <input class="field-textarea__input" type="textarea" name="emotions" placeholder="Опишите подробно все свои восторги">
+                <input class="field-textarea__input" type="textarea" rows="10" name="emotions" placeholder="Опишите подробно все свои восторги">
               </label>
             </div>
           </div>
@@ -128,7 +129,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapp">
+      <div class="page-footer__wrapper">
         <a class="page-footer__hashtag" href="#">#visitsedona</a>
         <div class="page-footer__social">
           <a class="social-link  social-link--tw" href="#">twitter</a>
@@ -141,7 +142,7 @@
       </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal  modal--secondary">
       <h2 class="modal__title">что-то пошло не так!</h2>
       <p class="modal__text">
         проверьте поля, выделенные
