@@ -17,3 +17,35 @@
   font-weight: bold;
   text-transform: none;
 }
+
+.field-checkbox {
+  min-height: 411px;
+}
+
+.field-checkbox__items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media @tablet-widths {
+  .field-checkbox {
+    width: 459px;
+    min-height: 306px;
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  .field-checkbox__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media @desktop-widths {
+  .field-checkbox {
+    width: 960px;
+    min-height: 100px;
+    padding: 0;
+  }
+}

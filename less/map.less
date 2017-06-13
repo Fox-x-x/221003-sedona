@@ -1,3 +1,21 @@
 .map {
-  background-image: url("/img/bg-map-mobile@1x.jpg");
+  background: url("/img/bg-map-mobile@1x.jpg") center no-repeat;
+  width: 320px;
+  height: 350px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+@media @tablet-widths {
+  .map {
+    background: url("/img/map-tablet.jpg") center no-repeat;
+    width: 768px;
+  }
+}
+
+@media @desktop-widths {
+  .map {
+    background: url("/img/map-desktop.jpg") center no-repeat;
+    width: 1200px;
+  }
 }

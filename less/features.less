@@ -1,12 +1,19 @@
 .features {
+  width: 320px;
+  margin: 0 auto;
   background-color: @color-thirdy;
   border: 1px solid black;
 }
 
-.features__list {}
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .features__item {
   background-color: @color-thirdy;
+  border: 1px solid black;
 }
 
 .feature__title {
@@ -16,6 +23,30 @@
   font-weight: bold;
 }
 
-.feature__text {
 
+@media @tablet-widths {
+  .features {
+    width: 768px;
+    min-height: 330px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features__item {
+    width: 256px;
+  }
+}
+
+@media @desktop-widths {
+  .features {
+    width: 1200px;
+    min-height: 330px;
+  }
+
+  .features__item {
+    width: 400px;
+  }
 }

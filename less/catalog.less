@@ -1,3 +1,29 @@
 .catalog {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
   background-color: @color-thirdy;
+}
+
+@media @tablet-widths {
+  .catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media @desktop-widths {
+  .catalog {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

@@ -1,6 +1,18 @@
 .photo {
+  min-height: 416px;
   background-color: @color-thirdy;
   border: 1px solid black;
+}
+
+.photo__information {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.photo__description-wrapper {
+  background-color: @color-seventh;
 }
 
 .photo__heading {
@@ -12,10 +24,53 @@
 .photo__text {
   line-height: 24px;
   text-transform: none;
+  font-style: normal;
 }
 
 .photo__like-text {
   color: @color-secondary;
   line-height: 24px;
   font-weight: bold;
+}
+
+
+@media @tablet-widths {
+  .photo {
+    width: 648px;
+    border: 1px solid blue;
+    min-height: 280px;
+
+    &--secondary {
+      width: 322px;
+      border: 1px solid red;
+      min-height: 280px;
+    }
+  }
+
+  .photo__description-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media @desktop-widths {
+  .photo {
+    position: relative;
+    width: 1200px;
+    border: 1px solid blue;
+    min-height: 280px;
+
+    &--secondary {
+      width: 398px;
+      border: 1px solid red;
+      min-height: 280px;
+    }
+  }
+
+  .photo__description-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }

@@ -17,3 +17,22 @@
   font-weight: bold;
   text-transform: none;
 }
+
+.field-radio__items {
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+}
+
+@media @tablet-widths {
+  .field-radio {
+    order: -1;
+    width: 320px;
+  }
+}
+
+@media @desktop-widths {
+  .field-radio {
+    width: 475px;
+  }
+}

@@ -1,4 +1,22 @@
 .form {
+  display: flex;
+  flex-direction: column;
   background-color: @color-thirdy;
-  border: 1px solid black;
+  // border: 1px solid black;
+}
+
+@media @tablet-widths {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media @desktop-widths {
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
