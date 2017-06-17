@@ -3,11 +3,20 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  padding: 0;
+  padding-top: 38px;
   background-color: @color-fourth;
+  // border-bottom: 1px solid red;
+
+  &--secondary {
+    padding-top: 29px;
+    padding-bottom: 30px;
+  }
 }
 
 .reason__about {
-  border: 1px solid black;
+  margin: 0;
+  padding: 0;
 }
 
 .reason__title {
@@ -15,19 +24,47 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  padding-right: 26px;
+  text-align: center;
+}
+
+.reason--secondary .reason__text {
+  margin-bottom: 0;
 }
 
 .reason__number {
   color: @color-thirdy;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
 }
 
 .reason__text {
   color: @color-thirdy;
+  margin: 0;
+  padding: 0;
+  padding-left: 26px;
+  padding-right: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+  // padding-bottom: 1px;
 }
 
-.reason__picture {}
+.reason__picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 260px;
+}
 
 .reason--secondary {
+  position: relative;
   background-color: @color-sixth;
 }
 
@@ -46,36 +83,103 @@
   color: @color-main;
 }
 
+.reason--secondary::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  background-color: @color-seventeen;
+}
+
+.reason--secondary:last-child::after {
+  display: none;
+}
 
 @media @tablet-widths {
   .reason {
     flex-direction: row;
     width: 768px;
+    padding: 0;
   }
 
   .reason__about {
     width: 256px;
+    padding-top: 42px;
+  }
+
+  .reason__title {
+    font-size: 21px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .reason__text {
+    padding-left: 44px;
+    padding-right: 44px;
   }
 
   .reason__picture {
     width: 512px;
   }
 
-  .reason__about--secondary {
+  .reason__about--another-order {
     order: 1;
+  }
+
+  .reason--secondary::after {
+    display: none;
+  }
+
+  .reason--secondary .reason__title {
+    font-size: 21px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
 @media @desktop-widths {
   .reason {
     width: 1200px;
+
+    &--secondary {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 
   .reason__about {
     width: 400px;
   }
 
+  .reason__title {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .reason__text {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .reason__about--another-order .reason__text {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
   .reason__picture {
     width: 800px;
+  }
+
+  .reason--secondary .reason__title {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .reason--secondary .reason__text {
+    padding-left: 52px;
+    padding-right: 52px;
   }
 }

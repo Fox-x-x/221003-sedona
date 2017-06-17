@@ -1,11 +1,15 @@
 .page-heading {
-  background-color: @color-thirdy;
-  border: 1px solid black;
-  width: 280px;
-  min-height: 239px;
-  padding-left: 20px;
-  padding-right: 20px;
+  position: relative;
+  background-color: @color-fourth;
+  // border: 1px solid black;
+  width: 320px;
+  padding-top: 42px;
+  padding-bottom: 44px;
   margin: 0 auto;
+  background-image: url("/img/bg-triangle.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .page-heading__title {
@@ -13,26 +17,61 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 32px;
+  margin-bottom: 22px;
 }
 
 .page-heading__text {
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 32px;
+  // padding-bottom: 34px;
 }
 
 @media @tablet-widths {
   .page-heading {
-    width: 728px;
-    min-height: 207px;
+    width: 768px;
     margin: 0 auto;
+    padding-bottom: 50px;
+    background-image: none;
+    background-color: @color-thirdy;
+  }
+
+  .page-heading__title {
+    padding-left: 163px;
+    padding-right: 163px;
+    margin-bottom: 31px;
+  }
+
+  .page-heading__text {
+    padding-left: 139px;
+    padding-right: 139px;
   }
 }
 
 @media @desktop-widths {
   .page-heading {
-    width: 1160px;
-    min-height: 310px;
+    width: 1200px;
     margin: 0 auto;
+  }
+
+  .page-heading__title {
+    font-size: 21px;
+    padding-left: 378px;
+    padding-right: 378px;
+  }
+
+  .page-heading__text {
+    padding-left: 354px;
+    padding-right: 354px;
   }
 }
