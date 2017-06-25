@@ -2,21 +2,45 @@
   display: flex;
   flex-direction: column;
   background-color: @color-thirdy;
-  // border: 1px solid black;
+  margin: 0 auto;
+}
+
+.form__footer {
+  margin: 0 auto;
+}
+
+.form__footer-text {
+  display: none;
 }
 
 @media @tablet-widths {
   .form {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  .form__footer {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+
+  .form__footer-text {
+    display: block;
   }
 }
 
 @media @desktop-widths {
   .form {
-    padding-left: 120px;
-    padding-right: 120px;
+    width: 961px;
+    // border: 1px solid red;
+  }
+
+  .form__footer {
+    width: 960px;
   }
 }

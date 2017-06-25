@@ -1,31 +1,27 @@
 .booking {
   background-color: @color-thirdy;
-  width: 320px;
-  margin: 0 auto;
   padding-top: 31px;
   padding-bottom: 50px;
 }
 
 .booking__title {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 22px;
   color: @color-secondary;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
-  margin-bottom: 22px;
 }
 
 .booking__text{
-  line-height: 24px;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 0;
-  padding-left: 27px;
-  padding-right: 27px;
   margin-bottom: 35px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -35,20 +31,19 @@
 
 @media @tablet-widths {
   .booking {
-    width: 768px;
     padding-top: 49px;
     padding-bottom: 58px;
   }
 
   .booking__title {
+    width: 457px;
     font-size: 30px;
     margin-bottom: 26px;
   }
 
   .booking__text {
+    width: 457px;
     margin-bottom: 40px;
-    padding-left: 164px;
-    padding-right: 164px;
   }
 
   .booking__btn {
@@ -58,17 +53,15 @@
 
 @media @desktop-widths {
   .booking {
-    width: 1200px;
     padding-bottom: 66px;
   }
 
   .booking__text {
     margin-bottom: 47px;
-    padding-left: 371px;
-    padding-right: 371px;
   }
 
   .booking__btn {
+    display: block;
     margin-left: 371px;
   }
 }

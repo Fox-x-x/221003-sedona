@@ -1,7 +1,55 @@
 .video {
+  position: relative;
   width: 320px;
+  height: 270px;
+  // border: 1px solid black;
+  background-color: @color-thirdy;
+}
+
+.video__image {
+  width: 320px;
+  height: 201px;
+}
+
+.video__controls {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 0;
+  left: 20px;
+  width: 280px;
+  height: 112px;
   margin: 0 auto;
   border: 1px solid black;
+}
+
+.video__timeline {
+  width: 280px;
+  height: 45px;
+  background-image: url("/img/timeline-mob.png");
+}
+
+.video__repeat,
+.video__cc,
+.video__full-screen {
+  height: 20px;
+}
+
+.video__cc {
+  width: 32px;
+}
+
+.video__full-screen {
+  width: 20px;
+}
+
+.video__repeat {
+  margin-right: 133px;
+  margin-left: 25px;
+}
+
+.video__cc {
+  margin-right: 31px;
 }
 
 @media @tablet-widths {

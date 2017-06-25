@@ -1,21 +1,24 @@
 .promo {
-  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/text-sedona-index.svg"), url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@1x.jpg");
-  background-size: 105%, 280px, contain, cover;
-  background-repeat: no-repeat;
-  background-position: bottom, center, bottom, center;
+  padding-top: 56px;
   margin: 0 auto;
-  width: 320px;
-  min-height: 389px;
+  height: 389px;
+  background-color: @color-thirdy;
+  background-image: url("/img/bg-intro-triangle-mobile.svg"),
+                    url("/img/text-sedona-index.svg"),
+                    url("/img/bg-intro-triangle-mobile.svg"),
+                    url("/img/bg-back-mobile@1x.jpg");
+  background-size: 105%, 280px, contain, auto;
+  background-repeat: no-repeat;
+  background-position: bottom, 50% 62%, bottom, bottom;
 }
 
 .promo__text {
-  // background-position: center;
 }
 
 @media @tablet-widths {
   .promo {
-    width: 768px;
-    min-height: 518px;
+    height: 518px;
+    padding-top: 0;
     background-size: 91%, 461px, 104%, cover;
     background-repeat: no-repeat;
     background-position: bottom, 50% 46%, -7px 480px, center;
@@ -24,9 +27,6 @@
 
 @media @desktop-widths {
   .promo {
-    // border: 1px solid black;
-    // background: url("/img/back-desktop.jpg") center no-repeat;
-    width: 1200px;
-    min-height: 518px;
+    height: 518px;
   }
 }
