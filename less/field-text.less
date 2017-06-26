@@ -6,7 +6,6 @@
   background-color: #ffffff;
   border-bottom: 1px solid @color-eighteen;
   border-top: 1px solid @color-eighteen;
-  // border: 1px solid red;
 
   &--secondary {
     border-top: none;
@@ -26,6 +25,7 @@
 
 .field-text__input {
   min-width: 154px;
+  flex-grow: 1;
   font-family: @font-family-main;
   color: #000000;
   font-size: 18px;
@@ -46,6 +46,7 @@
 }
 
 .field-text__text {
+  flex-shrink: 0;
   color: @color-main;
   font-size: 14px;
   line-height: 26px;
@@ -68,7 +69,6 @@
 
 .field-text__item {
   margin-bottom: 20px;
-  // border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -77,14 +77,6 @@
     display: flex;
     flex-direction: column;
   }
-}
-
-.field-text__input {
-  flex-grow: 1;
-}
-
-.field-text__text {
-  flex-shrink: 0;
 }
 
 @media @tablet-widths {
@@ -118,7 +110,6 @@
  .field-text--secondary .field-text__title::after {
    content: '';
    flex-grow: 1;
-   width: 125px;
    height: 1px;
    background: @color-eighteen;
  }

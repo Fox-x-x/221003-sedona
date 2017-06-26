@@ -2,7 +2,6 @@
   position: relative;
   width: 320px;
   height: 270px;
-  // border: 1px solid black;
   background-color: @color-thirdy;
 }
 
@@ -20,13 +19,21 @@
   width: 280px;
   height: 112px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .video__timeline {
   width: 280px;
-  height: 45px;
-  background-image: url("/img/timeline-mob.png");
+  height: 23px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 22px;
+}
+
+.video__timeline-line {
+  position: relative;
+  width: 235px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .video__repeat,
@@ -55,15 +62,62 @@
 @media @tablet-widths {
   .video {
     width: 648px;
+    height: 500px;
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .video__image {
+    width: 648px;
+    height: 500px;
+  }
+
+  .video__controls {
+    align-items: center;
+    width: 648px;
+    height: 93px;
+    left: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__timeline {
+    width: 390px;
+    margin-right: 43px;
+    background-color: transparent;
+  }
+
+  .video__timeline-line {
+    width: 390px;
+  }
+
+  .video__repeat {
+    order: -1;
+    margin-right: 43px;
   }
 }
 
 @media @desktop-widths {
   .video {
     width: 800px;
+    height: 500px;
     padding-left: 200px;
     padding-right: 200px;
+  }
+
+  .video__image {
+    width: 800px;
+  }
+
+  .video__controls {
+    width: 800px;
+    left: 200px;
+  }
+
+  .video__timeline {
+    width: 540px;
+  }
+
+  .video__timeline-line {
+    width: 540px;
   }
 }
