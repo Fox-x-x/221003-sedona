@@ -1,7 +1,18 @@
 .photo {
-  min-height: 416px;
   background-color: @color-thirdy;
-  border: 1px solid black;
+  padding-top: 22px;
+  border-top: 1px solid @color-eighteen;
+}
+
+.photo:last-child {
+  border-bottom: 1px solid @color-eighteen;
+}
+
+.photo__image {
+  display: block;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
 }
 
 .photo__information {
@@ -9,10 +20,14 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+  margin-bottom: 5px;
 }
 
 .photo__description-wrapper {
-  background-color: @color-seventh;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .photo__heading {
@@ -27,6 +42,15 @@
   font-style: normal;
 }
 
+.photo__like {
+  display: flex;
+  align-items: center;
+}
+
+.photo__like-icon {
+  margin-right: 13px;
+}
+
 .photo__like-text {
   color: @color-secondary;
   line-height: 24px;
@@ -36,41 +60,68 @@
 
 @media @tablet-widths {
   .photo {
-    width: 648px;
-    border: 1px solid blue;
-    min-height: 280px;
+    width: 324px;
+    padding-top: 0;
+    border-top: 0;
 
     &--secondary {
-      width: 322px;
-      border: 1px solid red;
-      min-height: 280px;
+      width: 648px;
     }
+  }
+
+  .photo:last-child {
+    border-bottom: 0;
   }
 
   .photo__description-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-color: @color-seventh;
+  }
+
+  .photo--secondary .photo__description-wrapper {
+    padding-right: 20px;
+  }
+
+  .photo:nth-child(2n+3) .photo__description-wrapper {
+    background-color: @color-nineteen;
   }
 }
 
 @media @desktop-widths {
   .photo {
     position: relative;
-    width: 1200px;
-    border: 1px solid blue;
-    min-height: 280px;
+    width: 400px;
 
     &--secondary {
-      width: 398px;
-      border: 1px solid red;
-      min-height: 280px;
+      width: 1200px;
     }
   }
 
   .photo__description-wrapper {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo:nth-child(2n+3) .photo__description-wrapper {
+      background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo--secondary .photo__description-wrapper {
+    padding-right: 20px;
+    width: 1160px;
+  }
+
+  .photo__heading,
+  .photo__text,
+  .photo__like-text
+  {
+    color: @color-thirdy;
   }
 }

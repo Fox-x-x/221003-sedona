@@ -1,52 +1,130 @@
 .features {
-  width: 320px;
   margin: 0 auto;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 21px;
   background-color: @color-thirdy;
-  border: 1px solid black;
 }
 
 .features__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-right: 40px;
+  // border: 1px solid red;
 }
 
 .features__item {
   background-color: @color-thirdy;
-  border: 1px solid black;
+  padding-top: 14px;
+  padding-left: 67px;
+  margin-bottom: 18px;
+  // border: 1px solid black;
+
+  &--house {
+    background-image: url("/img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 17px 5px;
+  }
+  &--gift {
+    background-image: url("/img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 17px 3px;
+  }
+  &--burger {
+    background-image: url("/img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 17px 7px;
+  }
 }
 
-.feature__title {
+.features__title {
   color: @color-secondary;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
+.features__text {
+  padding: 0;
+  margin: 0;
+}
 
 @media @tablet-widths {
   .features {
-    width: 768px;
-    min-height: 330px;
+    padding: 0;
+    padding-bottom: 60px;
   }
 
   .features__list {
     display: flex;
     flex-direction: row;
+    padding: 0;
+    margin: 0;
   }
 
   .features__item {
     width: 256px;
+    padding: 0;
+    margin: 0;
+    padding-top: 160px;
+
+    &--house {
+      background-size: 75px;
+      background-position: 50% 60px;
+    }
+    &--gift {
+      background-size: 64px;
+      background-position: 50% 60px;
+      order: 1;
+    }
+    &--burger {
+      background-size: 77px;
+      background-position: 50% 60px;
+    }
+  }
+
+  .features__title {
+    width: 165px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .features__text {
+    width: 165px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
 @media @desktop-widths {
   .features {
     width: 1200px;
-    min-height: 330px;
+    padding-bottom: 80px;
   }
 
   .features__item {
     width: 400px;
+  }
+
+  .features__title {
+    width: 295px;
+  }
+
+  .features__text {
+    width: 295px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
   }
 }

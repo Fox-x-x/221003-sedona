@@ -1,36 +1,71 @@
 .field-textarea {
-  background-color: #ffffff;
-  border: 1px solid black;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 51px;
 }
 
 .field-textarea__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   color: #000000;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .field-textarea__input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 16px 20px 16px 20px;
   font-family: @font-family-main;
   color: #000000;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-}
-
-.field-textarea__items {
-  min-height: 273px;
+  background-color: @color-seventh;
+  border: none;
 }
 
 @media @tablet-widths {
   .field-textarea {
-    width: 649px;
+    width: 650px;
+    padding: 0;
+    margin-bottom: 57px;
+  }
+
+  .field-textarea__title {
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-size: 21px;
+    margin-bottom: 57px;
+  }
+
+  .field-textarea__title::before,
+  .field-textarea__title::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: @color-eighteen;
+  }
+
+  .field-textarea__title::before {
+    margin-right: 55px;
+  }
+
+  .field-textarea__title::after {
+    margin-left: 55px;
   }
 }
 
 @media @desktop-widths {
   .field-textarea {
     width: 960px;
+    padding-top: 64px;
   }
 }
