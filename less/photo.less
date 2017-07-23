@@ -51,6 +51,10 @@
   margin-right: 13px;
 }
 
+.photo__like-icon svg {
+  fill: @color-twentythree;
+}
+
 .photo__like-text {
   color: @color-secondary;
   line-height: 24px;
@@ -71,6 +75,20 @@
 
   .photo:last-child {
     border-bottom: 0;
+  }
+
+  .photo__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo__like-icon svg {
+    fill: @color-twentyfive;
+  }
+
+  .photo--secondary .photo__image {
+    width: 648px;
+    height: 400px;
   }
 
   .photo__description-wrapper {
@@ -100,6 +118,18 @@
     &--secondary {
       width: 1200px;
     }
+  }
+
+  .photo__image {
+    width: 400px;
+  }
+
+  .photo__like-icon svg {
+    fill: @color-thirdy;
+  }
+
+  .photo--secondary .photo__image {
+    width: 1200px;
   }
 
   .photo__description-wrapper {

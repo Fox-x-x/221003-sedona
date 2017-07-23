@@ -1,8 +1,30 @@
 .video-button {
-  width: 16px;
+  width: 20px;
   height: 20px;
   margin: 0;
   padding: 0;
+  background-color: transparent;
+}
+
+.video-button:hover {
+  background-color: transparent;
+}
+
+.video-button:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.video-button svg {
+  fill: @color-thirdy;
+}
+
+.video-button svg:hover {
+  fill: @color-main;
+}
+
+.video-button svg:active {
+  fill: @color-twentyfour;
 }
 
 .video-button--cc {
@@ -20,4 +42,12 @@
   border-radius: 50%;
   bottom: -4px;
   background-color: @color-thirdy;
+}
+
+.video-button--time:hover {
+  background-color: @color-main;
+}
+
+.video-button--time:active {
+  background-color: @color-twentyfour;
 }

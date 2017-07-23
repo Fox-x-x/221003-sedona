@@ -1,4 +1,7 @@
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   font-size: 0;
@@ -7,20 +10,27 @@
   padding: 0;
   background-color: @color-fourth;
   color: @color-thirdy;
+}
 
-  &--tw {
-    background-image: url("/img/icon-twitter.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--fb {
-    background-image: url("/img/icon-facebook.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  &--yt {
-    background-image: url("/img/icon-youtube.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.social-link--tw svg,
+.social-link--fb svg,
+.social-link--yt svg
+ {
+  fill: @color-thirdy;
+}
+
+.social-link:hover {
+  background-color: @color-fourteenth;
+}
+
+.social-link:active {
+  background-color: @color-fifteenth;
+}
+
+
+.social-link--tw:active.social-link--tw svg,
+.social-link--fb:active.social-link--fb svg,
+.social-link--yt:active.social-link--yt svg
+ {
+  fill: @color-twentytwo;
 }
