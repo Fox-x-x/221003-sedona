@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
     <title>Седона: фото и видео</title>
   </head>
 
@@ -51,10 +56,10 @@
         <div class="page-header__logo">
           <picture class="page-header__image">
             <source media="(min-width: 1200px)"
-                    srcset="/img/logo-sedona-desktop.svg">
+                    srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)"
-                    srcset="/img/logo-sedona-tablet.svg">
-            <img src="/img/logo-sedona-mobile.svg">
+                    srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg">
           </picture>
         </div>
         <nav class="main-nav  main-nav--open">
@@ -88,13 +93,13 @@
           <article class="photo  photo--secondary">
             <picture class="photo__image">
               <source media="(min-width: 1200px)"
-                      srcset="/img/photo-1-desktop@1x.jpg 1x,
-                              /img/photo-1-desktop@2x.jpg 2x">
+                      srcset="img/photo-1-desktop@1x.jpg 1x,
+                              img/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="/img/photo-1-tablet@1x.jpg 1x,
-                              /img/photo-1-tablet@2x.jpg 2x">
-              <img src="/img/photo-1-mobile@1x.jpg"
-                   srcset="/img/photo-1-mobile@2x.jpg 2x">
+                      srcset="img/photo-1-tablet@1x.jpg 1x,
+                              img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg"
+                   srcset="img/photo-1-mobile@2x.jpg 2x">
             </picture>
             <div class="photo__description-wrapper">
               <blockquote class="photo__information">
@@ -113,13 +118,13 @@
           <article class="photo">
             <picture class="photo__image">
               <source media="(min-width: 1200px)"
-                      srcset="/img/photo-2-desktop@1x.jpg 1x,
-                              /img/photo-2-desktop@2x.jpg 2x">
+                      srcset="img/photo-2-desktop@1x.jpg 1x,
+                              img/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="/img/photo-2-tablet@1x.jpg 1x,
-                              /img/photo-2-tablet@2x.jpg 2x">
-              <img src="/img/photo-2-mobile@1x.jpg"
-                   srcset="/img/photo-2-mobile@2x.jpg 2x">
+                      srcset="img/photo-2-tablet@1x.jpg 1x,
+                              img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg"
+                   srcset="img/photo-2-mobile@2x.jpg 2x">
             </picture>
             <div class="photo__description-wrapper">
               <blockquote class="photo__information">
@@ -138,13 +143,13 @@
           <article class="photo">
             <picture class="photo__image">
               <source media="(min-width: 1200px)"
-                      srcset="/img/photo-3-desktop@1x.jpg 1x,
-                              /img/photo-3-desktop@2x.jpg 2x">
+                      srcset="img/photo-3-desktop@1x.jpg 1x,
+                              img/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="/img/photo-3-tablet@1x.jpg 1x,
-                              /img/photo-3-tablet@2x.jpg 2x">
-              <img src="/img/photo-3-mobile@1x.jpg"
-                   srcset="/img/photo-3-mobile@2x.jpg 2x">
+                      srcset="img/photo-3-tablet@1x.jpg 1x,
+                              img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg"
+                   srcset="img/photo-3-mobile@2x.jpg 2x">
             </picture>
             <div class="photo__description-wrapper">
               <blockquote class="photo__information">
@@ -163,13 +168,13 @@
           <article class="photo">
             <picture class="photo__image">
               <source media="(min-width: 1200px)"
-                      srcset="/img/photo-4-desktop@1x.jpg 1x,
-                              /img/photo-4-desktop@2x.jpg 2x">
+                      srcset="img/photo-4-desktop@1x.jpg 1x,
+                              img/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="/img/photo-4-tablet@1x.jpg 1x,
-                              /img/photo-4-tablet@2x.jpg 2x">
-              <img src="/img/photo-4-mobile@1x.jpg"
-                   srcset="/img/photo-4-mobile@2x.jpg 2x">
+                      srcset="img/photo-4-tablet@1x.jpg 1x,
+                              img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile@1x.jpg"
+                   srcset="img/photo-4-mobile@2x.jpg 2x">
             </picture>
             <div class="photo__description-wrapper">
               <blockquote class="photo__information">
@@ -198,13 +203,13 @@
         <div class="video">
           <picture class="video__image">
             <source media="(min-width: 1200px)"
-                    srcset="/img/video-desktop@1x.jpg 1x,
-                            /img/video-desktop@2x.jpg 2x">
+                    srcset="img/video-desktop@1x.jpg 1x,
+                            img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-                    srcset="/img/video-tablet@1x.jpg 1x,
-                            /img/video-tablet@2x.jpg 2x">
-            <img src="/img/video-mobile@1x.jpg"
-                 srcset="/img/video-mobile@2x.jpg 2x">
+                    srcset="img/video-tablet@1x.jpg 1x,
+                            img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg"
+                 srcset="img/video-mobile@2x.jpg 2x">
           </picture>
           <div class="video__controls">
             <div class="video__timeline">

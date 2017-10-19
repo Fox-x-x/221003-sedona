@@ -16,14 +16,14 @@
 }
 
 .video-button svg {
-  fill: @color-thirdy;
+  fill: @color-twentysix;
 }
 
-.video-button svg:hover {
+.video-button:hover svg {
   fill: @color-main;
 }
 
-.video-button svg:active {
+.video-button:active svg {
   fill: @color-twentyfour;
 }
 
@@ -50,4 +50,118 @@
 
 .video-button--time:active {
   background-color: @color-twentyfour;
+}
+
+
+@media @tablet-widths {
+  .video-button {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .video-button:hover {
+    background-color: transparent;
+  }
+
+  .video-button:focus {
+    outline: none;
+    background-color: transparent;
+  }
+
+  .video-button svg {
+    fill: @color-thirdy;
+  }
+
+  .video-button svg:hover {
+    fill: @color-main;
+  }
+
+  .video-button svg:active {
+    fill: @color-twentyfour;
+  }
+
+  .video-button--cc {
+    width: 32px;
+  }
+
+  .video-button--full-screen {
+    width: 20px;
+  }
+
+  .video-button--time {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: -4px;
+    background-color: @color-thirdy;
+  }
+
+  .video-button--time:hover {
+    background-color: @color-main;
+  }
+
+  .video-button--time:active {
+    background-color: @color-twentyfour;
+  }
+}
+
+
+@media @desktop-widths {
+  .video-button {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .video-button:hover {
+    background-color: transparent;
+  }
+
+  .video-button:focus {
+    outline: none;
+    background-color: transparent;
+  }
+
+  .video-button svg {
+    fill: @color-thirdy;
+  }
+
+  .video-button svg:hover {
+    fill: @color-main;
+  }
+
+  .video-button svg:active {
+    fill: @color-twentyfour;
+  }
+
+  .video-button--cc {
+    width: 32px;
+  }
+
+  .video-button--full-screen {
+    width: 20px;
+  }
+
+  .video-button--time {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: -4px;
+    background-color: @color-thirdy;
+  }
+
+  .video-button--time:hover {
+    background-color: @color-main;
+  }
+
+  .video-button--time:active {
+    background-color: @color-twentyfour;
+  }
 }
